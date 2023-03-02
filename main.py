@@ -1,16 +1,24 @@
 # This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+class ZerosMaker:
+    def __init__(self, m, n):
+        self.m = m
+        self.n = n
 
+    def print_hi(self, name):
+        print(f'Hi, {name}')
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    def zeros(self):
+        print(f'm == {self.m}, n == {self.n} \n')
+        strz = str(0)*self.m
+        for i in range(0, self.n):
+            print(strz)
+
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    zs_maker = ZerosMaker(5, 9)
+    zs_maker.print_hi('PyCharm')
+    zs_maker.zeros()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
